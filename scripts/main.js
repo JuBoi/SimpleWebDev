@@ -30,7 +30,7 @@ myImage.onclick = function() {
 	}
 }
 
-var myButton = document.querySelector('button');
+var myButton = document.querySelector('#changeUser');
 var last = document.querySelector('#potato');
 
 function setUserName() {
