@@ -1,5 +1,4 @@
 html  {
-	font-size: 20px;
 	font-family: 'Arial';
 	background-color: #000000;
 }
@@ -68,6 +67,22 @@ ul {
 	height: 200px;
 }
 
+#textDiv {
+	border: 1px solid black;
+	padding: 5px;
+	width: 350px;
+	height: 600px;
+	float: right;
+}
+
+#description {
+	font-size: 18px;
+}
+
+#annotation {
+	font-size: 26px;
+}
+
 .modal {
 	display: none;
 	position: fixed;
@@ -103,3 +118,13 @@ ul {
 	text-decoration: none;
 	cursor: pointer;
 }
+
+.arc text {
+	font: 10px sans-serif;
+	text-anchor:middle ;
+}
+
+.arc path {
+	stroke: #fff;
+}
+
