@@ -1,11 +1,12 @@
 html  {
 	font-size: 20px;
-	font-family: 'Lobster', cursive;
+	font-family: 'Arial';
 	background-color: #000000;
 }
 
 body  {
-	width: 1100px;
+	width: 1200px;
+	height: 700px;
 	margin: 0 auto;
 	background-color: #FFFFFF;
 	padding: 0 20px 20px 20px;
@@ -15,23 +16,30 @@ body  {
 h1{
 	margin: 0;
 	text-align: center;
-	font-size: 60px;
+	font-size: 40px;
 	padding: 20px 0;
 }
 
-#overwatch{
+#pokeball{
 	display: block;
 	margin: 0 auto;
 }
 
-#link {
-	color: darkorange;
+#essay {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 15px 32px;
 	text-align: center;
-	font-size: 30px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
 }
 
 p {
-	color: darkorange;
+	color: black;
 	text-align: center;
 }
 
@@ -39,4 +47,40 @@ ul {
 	color: navy;
 	position: relative;
 	left: 230px;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }

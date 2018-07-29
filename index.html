@@ -5,23 +5,24 @@
 		<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 		<meta charset="utf-8">
 		<title>CS498 DV</title>
+		<script src="scripts/OnLoad.js"></script>
 	</head>
 	<body>
-		<h1>Overwatch is for Cool Kids!</h1>
-		<img id="overwatch" src="images/overwatch.png" alt="My Test Image">
+		<h1>CS498 Data Visualization Final Project</h1>
+		<img id="pokeball" src="images/pokemonball.png" alt="My Test Image">
 		<p id="first">At Overwatch, we're a small-knit community of </p>
-
-		<ul>
-			<li>Edge-Lords</li>
-			<li>Foreign People</li>
-			<li id="potato">Potatoes</li>
-		</ul>
-
-		<p id="second">working together to kill stuff</p>
-
-		<p id="link">Visit us <a href="https://www.reddit.com/r/overwatch">here!</a>
 		<br/>
-		<button>Change User</button>
+
+		<!-- Button to open essay -->
+		<div style="text-align:center;">
+			<button id = "essay">About the Visualization</button>
+		</div>
+		<div id = "Modal" class="modal">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Some text in here..</p>
+			</div>
+		</div>
 		<script src="scripts/main.js"></script>
 	</body>
 </html>
