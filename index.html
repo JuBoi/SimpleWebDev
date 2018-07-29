@@ -6,23 +6,35 @@
 		<meta charset="utf-8">
 		<title>CS498 DV</title>
 		<script src="scripts/OnLoad.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
+
 	<body>
-		<h1>CS498 Data Visualization Final Project</h1>
-		<img id="pokeball" src="images/pokemonball.png" alt="My Test Image">
-		<p id="first">At Overwatch, we're a small-knit community of </p>
-		<br/>
+		<div id="dataDiv">
+			<h1 id="heading">CS498 Data Visualization Final Project</h1>
+			<img id="pokeball" src="images/pokemonball.png">
+			<p id="first">Today, I'll be giving you a brief overview of the different types</p>
+			<p id="second">of Pokemon that appear in the games. </p>
+		</div>
+
+		<div style="text-align:center;">
+			<button id ="back" disabled>Back</button>
+			<button id ="next">Next</button>
+		</div>
 
 		<!-- Button to open essay -->
-		<div style="text-align:center;">
+		<div id=footer>
 			<button id = "essay">About the Visualization</button>
 		</div>
-		<div id = "Modal" class="modal">
+
+		<div id="Modal" class="modal">
 			<div class="modal-content">
 				<span class="close">&times;</span>
 				<p>Some text in here..</p>
 			</div>
 		</div>
+
 		<script src="scripts/main.js"></script>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
 	</body>
 </html>
