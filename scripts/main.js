@@ -66,8 +66,11 @@ next.onclick = function() {
 		removeStuff();
 		firstChart();
 		check = false;
-		next.disabled = true;
-		next.style.background = "#8D8282";
+		// next.disabled = true;
+		// next.style.background = "#8D8282";
+	}
+	else {
+		subChart("normal");
 	}
 }
 
@@ -94,8 +97,21 @@ function removeStuff() {
 	dataDiv.appendChild(textDiv);
 }
 
-function subChart() {
-
+function subChart(type) {
+	var height = 600;
+	var width = 800;
+	var barWidth = 35;
+	var barOffset = 5;
+	d3.csv("./data/type1stats.csv", function(data) {
+		var i;
+		console.log(data);
+		// for(i = 0; i < data.length; i++){
+		// 	//console.log(d[i]);
+		// 	if(type == data[i][0]) {
+		// 		console.log(d[i]);
+		// 	}
+		// }
+	})
 }
 
 function firstChart() {
